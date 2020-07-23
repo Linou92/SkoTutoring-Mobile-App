@@ -12,35 +12,8 @@
 	<script type="text/javascript" charset="utf-8" src="js/phonegap-1.2.0.js"></script>
 	<script src="jquery.mobile/jquery.mobile-1.0rc2.js"></script>
 	<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
-	<script type="text/javascript" src="js/registerS.js"></script>
-
-	 <script type="text/javascript">
-            window.onload = function(){
-                document.addEventListener("deviceready", init, false);
-            }
-            
-            function init(){
-                document.getElementById("saveData").addEventListener("click", saveData, false);
-                document.getElementById("getData").addEventListener("click", getData, false);
-            }
-
-            function saveData(){
-                var username = document.getElementById('username').value;
-                var password = document.getElementById('password').value;
-                var passwordConf = document.getElementById('passwordConf').value;
-                var country = document.getElementById('country').value;
-                window.localStorage.setItem("username", username);
-                window.localStorage.setItem("password", password);
-                window.localStorage.setItem("passwordConf", passwordConf);
-                window.localStorage.setItem("country", country);
-                alert("Your data is stored successfully !");
-            }
-
-            function getData(){
-                var output = "Your username is " + window.localStorage.getItem("username") + " ,your password is " + window.localStorage.getItem("password") +" " +window.localStorage.getItem("passwordConf")+" and your country is " + window.localStorage.getItem("country");
-                document.getElementById("result").innerHTML = output;
-            }
-        </script> 
+	<script type="text/javascript" src="cordova-2.0.0.js"></script>
+ 
 </head>
 
 
@@ -60,34 +33,109 @@
 		<form id="registerForm">
 		<div data-role="fieldcontain" class="ui-hide-label">
 			<strong><label for="username" >Username:</label></strong>
-			<input type="text" name="username" id="username" value="" placeholder="Username" />
+			<input type="text" id="username" placeholder="Username" />
 		</div>
 
 		<div data-role="fieldcontain" class="ui-hide-label">
 			<strong><label for="password">Password:</label></strong>
-			<input type="password" name="password" id="password" value="" placeholder="Password" />
+			<input type="password" id="password" placeholder="Password" />
 		</div>
 
 		<div data-role="fieldcontain" class="ui-hide-label">
 			<strong><label for="passwordConf">Confirm password:</label></strong>
-			<input type="password" name="passwordConf" id="passwordConf" value="" placeholder="Confirm password" />
+			<input type="password" id="passwordConf" placeholder="Confirm password" />
 		</div>
 
 	
 			<div data-role="fieldcontain" class="ui-hide-label">
 				<strong><label for="country">Country of residency:</label></strong>
-				<input type="text" name="country" id="country" value="" placeholder="" />
-			</div>
+				<input type="text" id="country"/>
+			</div><br>
 
-		<center><input type="submit" value="Register" id="saveData"></center>
+		<center><button onclick='insertData()' id='submit'>Register</button></center><br>
 		
 		</form>
-		 <button id='getData'> Get data </button><br>
-            <div id="result"></div>
-		
+
+	     <ul id='list'></ul>
+
+		  <script type="text/javascript">
+
+		  var db = window.openDatabase("tutorialdb", "1.0", "tutorial database", 1000000); //will 
+		  document.addEventListener("deviceready", onDeviceReady, false);
+		 
+		  function onDeviceReady() {
+
+		   // Create Table
+		   db.transaction(populateDB, errorCB, successCB);
+
+		   // Select records
+		   fetchData();
+		  }
+
+		  function populateDB(tx){
+		   tx.executeSql('CREATE TABLE IF NOT EXISTS students (id INTEGER PRIMARY KEY AUTOINCREMENT,username TEXT NOT NULL, password TEXT NOT NULL, passwordConf TEXT NOT NULL, country TEXT NOT NULL)');
+		  }
+
+		  // Fetch all records
+		  function fetchData(){
+		   db.transaction(function(tx){
+		 
+		    tx.executeSql("select * from students",[],function(tx1,result){
+		     var len = result.rows.length;
+		 
+		     for (var i=0; i<len; i++){
+		      var note = result.rows.item(i).note;
+
+		      // Add list item
+		      var ul = document.getElementById("list");
+		      var li = document.createElement("li");
+		      li.appendChild(document.createTextNode(note));
+		      ul.appendChild(li);
+		     }
+		 
+		    },errorCB);
+		   }, errorCB, successCB);
+		  }
+		 
+		  function insertData(){
+
+		   // Insert record
+		   db.transaction(insertUser, errorCB, successCB);
+		   alert("Successfully inserted");
+  			window.location="loginS.html";
+		  }
+
+		  function insertUser(tx){
+		   var username = document.getElementById('username').value;
+		   var password = document.getElementById('password').value;
+		   var passwordConf = document.getElementById('passwordConf').value;
+		   var country = document.getElementById('country').value;
+		 
+		   // Insert query
+		   tx.executeSql("INSERT INTO students(username, password, passwordConf, country) VALUES (?,?,?,?)",[username, password, passwordConf, country]);
+		 
+		   // Append new list item
+		   var ul = document.getElementById("list");
+		   var li = document.createElement("li");
+		   li.appendChild(document.createTextNode(username));
+		   li.appendChild(document.createTextNode(password));
+		   li.appendChild(document.createTextNode(passwordConf));
+		   li.appendChild(document.createTextNode(country));
+		   ul.appendChild(li);
+		  }
+
+		  function errorCB(err) {
+		   alert("Error processing SQL: "+err.code + err);
+		  }
+
+		  function successCB() {
+		   // alert("success!");
+		  }
+		 
+		  </script>
+
 	</div>
-                   
-        
+
         </div> <!-- app close -->
      </div> <!-- container close -->
      <br>

@@ -46,19 +46,19 @@
 
 		<div data-role="fieldcontain" class="ui-hide-label">
 			<strong>Select your speaking languages:</strong><br>
-			<input type="checkbox" id="english" name="english" value="English">
+			<input type="checkbox" id="english" name="check" value="English">
 		  <label for="english"> English</label><br>
-		  <input type="checkbox" id="french" name="french" value="French">
+		  <input type="checkbox" id="french" name="check" value="French">
 		  <label for="french"> French</label><br>
-		  <input type="checkbox" id="spanish" name="spanish" value="Spanish">
+		  <input type="checkbox" id="spanish" name="check" value="Spanish">
 		  <label for="spanish"> Spanish</label><br>
-		  <input type="checkbox" id="german" name="german" value="German">
+		  <input type="checkbox" id="german" name="check" value="German">
 		  <label for="german"> German</label><br>
-		  <input type="checkbox" id="swedish" name="swedish" value="Swedish">
+		  <input type="checkbox" id="swedish" name="check" value="Swedish">
 		  <label for="swedish"> Swedish</label><br>
-		  <input type="checkbox" id="arabic" name="arabic" value="Arabic">
+		  <input type="checkbox" id="arabic" name="check" value="Arabic">
 		  <label for="arabic"> Arabic</label><br>
-		  <input type="checkbox" id="italian" name="italian" value="Italian">
+		  <input type="checkbox" id="italian" name="check" value="Italian">
 		  <label for="italian"> Italian</label><br>
 		</div>
 
@@ -79,19 +79,19 @@
 			  <label for="biology"> Biology</label><br>
 			  <input type="checkbox" id="phylosophy" name="phylosophy" value="Phylosophy">
 			  <label for="phylosophy"> Philosophy</label><br>
-			  <input type="checkbox" id="english" name="english" value="English">
+			  <input type="checkbox" id="english1" name="english1" value="English">
 			  <label for="english"> English</label><br>
-			  <input type="checkbox" id="french" name="french" value="French">
+			  <input type="checkbox" id="french1" name="french1" value="French">
 			  <label for="french"> French</label><br>
-			  <input type="checkbox" id="spanish" name="spanish" value="Spanish">
+			  <input type="checkbox" id="spanish1" name="spanish1" value="Spanish">
 			  <label for="spanish"> Spanish</label><br>
-			  <input type="checkbox" id="german" name="german" value="German">
+			  <input type="checkbox" id="german1" name="german1" value="German">
 			  <label for="german"> German</label><br>
-			  <input type="checkbox" id="swedish" name="swedish" value="Swedish">
+			  <input type="checkbox" id="swedish1" name="swedish1" value="Swedish">
 			  <label for="swedish"> Swedish</label><br>
-			  <input type="checkbox" id="arabic" name="arabic" value="Arabic">
+			  <input type="checkbox" id="arabic1" name="arabic1" value="Arabic">
 			  <label for="arabic"> Arabic</label><br>
-			  <input type="checkbox" id="italian" name="italian" value="Italian">
+			  <input type="checkbox" id="italian1" name="italian1" value="Italian">
 			  <label for="italian"> Italian</label><br>
 			</div>
 
@@ -108,15 +108,15 @@
 
 			<div data-role="fieldcontain" class="ui-hide-label">
 				<strong>Select your availability:</strong><br>
-				<input type="checkbox" id="8-10" name="8-10" value="8-10">
+				<input type="checkbox" id="case1" name="case1" value="8-10">
 			  <label for="8-10"> 8h - 10h</label><br>
-			  <input type="checkbox" id="10-12" name="10-12" value="10-12">
+			  <input type="checkbox" id="case2" name="case2" value="10-12">
 			  <label for="10-12"> 10h - 12h</label><br>
-			  <input type="checkbox" id="14-16" name="14-16" value="14-16">
+			  <input type="checkbox" id="case3" name="case3" value="14-16">
 			  <label for="14-16"> 14h - 16h</label><br>
-			  <input type="checkbox" id="16-18" name="16-18" value="16-18">
+			  <input type="checkbox" id="case4" name="case4" value="16-18">
 			  <label for="16-18"> 16h - 18h</label><br>
-			  <input type="checkbox" id="18-20" name="18-20" value="18-20">
+			  <input type="checkbox" id="case5" name="case5" value="18-20">
 			  <label for="18-20"> 18h - 20h</label><br>
 			</div>
 
@@ -125,9 +125,100 @@
 				<input type="text" name="country" id="country" value="" placeholder="" />
 			</div>
 
-		<center><input type="submit" value="Register" id="registerButton"></center>
+		<center><button onclick='insertData()' id='submit'>Register</button></center><br>
 		
 		</form>
+
+
+		<ul id='list'></ul>
+
+		  <script type="text/javascript">
+
+		  var db = window.openDatabase("tutorialdb", "1.0", "tutorial database", 1000000); //will 
+		  document.addEventListener("deviceready", onDeviceReady, false);
+		 
+		  function onDeviceReady() {
+
+		   // Create Table
+		   db.transaction(populateDB, errorCB, successCB);
+
+		   // Select records
+		   fetchData();
+		  }
+
+		  function populateDB(tx){
+		   tx.executeSql('CREATE TABLE IF NOT EXISTS teachers (id INTEGER PRIMARY KEY AUTOINCREMENT,username TEXT NOT NULL, password TEXT NOT NULL, passwordConf TEXT NOT NULL, languages TEXT NOT NULL, subjects TEXT NOT NULL, level TEXT NOT NULL, availability TEXT NOT NULL, country TEXT NOT NULL)');
+		  }
+
+		  // Fetch all records
+		  function fetchData(){
+		   db.transaction(function(tx){
+		 
+		    tx.executeSql("select * from teachers",[],function(tx1,result){
+		     var len = result.rows.length;
+		 
+		     for (var i=0; i<len; i++){
+		      var note = result.rows.item(i).note;
+
+		      // Add list item
+		      var ul = document.getElementById("list");
+		      var li = document.createElement("li");
+		      li.appendChild(document.createTextNode(note));
+		      ul.appendChild(li);
+		     }
+		 
+		    },errorCB);
+		   }, errorCB, successCB);
+		  }
+		 
+		  function insertData(){
+
+		   // Insert record
+		   db.transaction(insertUser, errorCB, successCB);
+		   alert("Successfully inserted");
+  			window.location="loginT.html";
+		  }
+
+		  function insertUser(tx){
+		   var username = document.getElementById('username').value;
+		   var password = document.getElementById('password').value;
+		   var passwordConf = document.getElementById('passwordConf').value;
+		   var country = document.getElementById('country').value;
+		   
+		   var checkbox = document.getElementsByName ("check");
+			var choice;
+
+			    for (var i= 0; i < checkbox.length; i++){
+			        if (checkbox[i].checked){
+			            choice = checkbox[i].value; 
+			            alert(choice);
+			            tx.executeSql("INSERT INTO teachers(beter) VALUES (?)",[choice]);
+			        }
+			    }
+		 
+		   // Insert query
+		   tx.executeSql("INSERT INTO teachers(username, password, passwordConf, country) VALUES (?,?,?,?)",[username, password, passwordConf, country]);
+		 
+		   // Append new list item
+		   var ul = document.getElementById("list");
+		   var li = document.createElement("li");
+		   li.appendChild(document.createTextNode(username));
+		   li.appendChild(document.createTextNode(password));
+		   li.appendChild(document.createTextNode(passwordConf));
+		   li.appendChild(document.createTextNode(country));
+		   li.appendChild(document.createTextNode(choice));
+		   ul.appendChild(li);
+		  }
+
+		  function errorCB(err) {
+		   alert("Error processing SQL: "+err.code + err);
+		  }
+
+		  function successCB() {
+		   // alert("success!");
+		  }
+		 
+		  </script>
 		
 	</div>
                    
