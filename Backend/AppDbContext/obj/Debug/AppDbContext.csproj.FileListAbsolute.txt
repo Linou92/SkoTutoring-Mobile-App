@@ -1,0 +1,60 @@
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\AppDbContext.dll.config
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\AppDbContext.dll
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\AppDbContext.pdb
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\EntityFramework.dll
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\EntityFramework.xml
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.csproj.CoreCompileInputs.cache
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.csproj.CopyComplete
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.dll
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.pdb
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.csproj.GenerateResource.cache
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.Migrations.dd.resources
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.Migrations.sd.resources
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.Migrations.sdaa.resources
+C:\Users\Nasca\source\repos\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.Migrations.ss.resources
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\AppDbContext.dll.config
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\AppDbContext.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\AppDbContext.pdb
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\EntityFramework.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\EntityFramework.xml
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.Migrations.dd.resources
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.Migrations.sd.resources
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.Migrations.sdaa.resources
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.Migrations.ss.resources
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.csproj.GenerateResource.cache
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.csproj.CoreCompileInputs.cache
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.csproj.CopyComplete
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\OnlineCourse.HttpApi\AppDbContext\obj\Debug\AppDbContext.pdb
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\AppDbContext.dll.config
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\AppDbContext.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\AppDbContext.pdb
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\EntityFramework.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\EntityFramework.xml
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\obj\Debug\AppDbContext.Migrations.dd.resources
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\obj\Debug\AppDbContext.Migrations.sd.resources
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\obj\Debug\AppDbContext.Migrations.sdaa.resources
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\obj\Debug\AppDbContext.Migrations.ss.resources
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\obj\Debug\AppDbContext.csproj.GenerateResource.cache
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\obj\Debug\AppDbContext.csproj.CoreCompileInputs.cache
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\obj\Debug\AppDbContext.csproj.CopyComplete
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\obj\Debug\AppDbContext.dll
+C:\Users\lina_\Downloads\OnlineCourse.HttpApi (2)\SkoTutoringApp\AppDbContext\obj\Debug\AppDbContext.pdb
