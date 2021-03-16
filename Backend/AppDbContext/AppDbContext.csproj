@@ -80,21 +80,9 @@
     <Compile Include="Enums\MessageType.cs" />
     <Compile Include="Enums\SessionStatusEnum.cs" />
     <Compile Include="Enums\UserEnums.cs" />
-    <Compile Include="Migrations\202102112102208_dd.cs" />
-    <Compile Include="Migrations\202102112102208_dd.designer.cs">
-      <DependentUpon>202102112102208_dd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202102112352578_sd.cs" />
-    <Compile Include="Migrations\202102112352578_sd.designer.cs">
-      <DependentUpon>202102112352578_sd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202102120005550_sdaa.cs" />
-    <Compile Include="Migrations\202102120005550_sdaa.designer.cs">
-      <DependentUpon>202102120005550_sdaa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202102141226185_ss.cs" />
-    <Compile Include="Migrations\202102141226185_ss.designer.cs">
-      <DependentUpon>202102141226185_ss.cs</DependentUpon>
+    <Compile Include="Migrations\202103141435354_init.cs" />
+    <Compile Include="Migrations\202103141435354_init.designer.cs">
+      <DependentUpon>202103141435354_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,17 +92,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202102112102208_dd.resx">
-      <DependentUpon>202102112102208_dd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202102112352578_sd.resx">
-      <DependentUpon>202102112352578_sd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202102120005550_sdaa.resx">
-      <DependentUpon>202102120005550_sdaa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202102141226185_ss.resx">
-      <DependentUpon>202102141226185_ss.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202103141435354_init.resx">
+      <DependentUpon>202103141435354_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

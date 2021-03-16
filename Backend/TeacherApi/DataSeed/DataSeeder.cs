@@ -25,9 +25,19 @@ namespace TeacherApi.DataSeed
                     var existedCountry = Db.Countries.ToList();
                     if(existedCountry == null || existedCountry.Count == 0)
                     {
-                        Country country = Db.Countries.Add(new Country
+                        var country = Db.Countries.Add(new Country
                         {
                             Name = "Sweden",
+                        });
+                        Db.SaveChanges();
+                        Db.Countries.Add(new Country
+                        {
+                            Name = "Germany",
+                        });
+                        Db.SaveChanges();
+                       Db.Countries.Add(new Country
+                        {
+                            Name = "France",
                         });
                         Db.SaveChanges();
                         return country;

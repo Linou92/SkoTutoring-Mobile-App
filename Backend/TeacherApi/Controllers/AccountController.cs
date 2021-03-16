@@ -16,6 +16,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
+using TeacherApi.DataSeed;
 
 namespace TeacherApi.Controllers
 {
@@ -250,6 +251,7 @@ namespace TeacherApi.Controllers
         {
              try
             {
+               
                 List<Country> DbCountries = Db.Countries.ToList();
                 List<CountryApiModel> countries = new List<CountryApiModel>();
                 foreach (var item in DbCountries)
