@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.HomePageActivity"
+    android:background="@drawable/app_bg">
+
+    <Button
+        android:id="@+id/btn_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26999998" />
+
+    <Button
+        android:id="@+id/btn_Lang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="My Languages"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile"
+        app:layout_constraintTop_toBottomOf="@+id/btn_profile" />
+
+    <Button
+        android:id="@+id/btn_Sub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="My Subjects"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Lang" />
+
+    <Button
+        android:id="@+id/btn_level"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="My Levels"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Sub" />
+
+    <Button
+        android:id="@+id/btn_avi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="My Availabilities"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile"
+        app:layout_constraintTop_toBottomOf="@+id/btn_level" />
+
+    <Button
+        android:id="@+id/btn_session"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="My Sessions"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile"
+        app:layout_constraintTop_toBottomOf="@+id/btn_avi" />
+
+    <Button
+        android:id="@+id/btn_mlocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="My Location"
+        app:layout_constraintEnd_toEndOf="@+id/btn_profile"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_profile"
+        app:layout_constraintTop_toBottomOf="@+id/btn_session" />
+</androidx.constraintlayout.widget.ConstraintLayout>
